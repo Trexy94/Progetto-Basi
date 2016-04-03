@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Registrazione - Arti Marziali Castelfranco Veneto</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <base href=""/>
+        <link href="Main.css" rel="stylesheet" type="text/css"/>
+                <link href='http://fonts.googleapis.com/css?family=Shojumaru' rel='stylesheet' type='text/css'/>
+
+    </head>
+<body>
+    <h1>Registrazione</h1>
+<div id="registration_form" >  
+   <form method="post"  action="register.php" id="f2" onsubmit="return testpass(this)">
+                <table id="tabella" >          
+                     <tr>
+                        <td>
+                            <input type="text" id="nome" name="nome" placeholder="nome" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="cognome" name="cognome" placeholder="cognome" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="mail" name="CodFis" placeholder="codice fiscale" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="mail" name="mail" placeholder="mail/username" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="password" name="Pass" placeholder="password" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="conferma password" name="ConfPass" placeholder="conferma password" required />
+                        </td>
+                    </tr>
+                    <tr><td id="testo_sx">Data di nascita:</td></tr>
+                        <tr>
+                        <td><input type="date" id="datanascita" name="data" required />
+                        </td>
+                    </tr>
+					 <tr><td id="testo_sx">Quali discipline vuoi<br>praticare da agonista?</td></tr>
+                        <tr><td id="testo_sx"><input type="checkbox" name="agonistabjj"  value="BJJ" />BJJ</td></tr>
+                        <tr><td id="testo_sx"><input type="checkbox" name="agonistajudo"  value="Judo" />Judo</td></tr>
+                        <tr><td id="testo_sx"><input type="checkbox" name="agonistakarate"  value="Karate" />Karate</td></tr> 
+                    <tr>
+                    <tr><td id="testo_sx">Quali discipline pratichi<br>già come amatore?<br>(ATTENZIONE! Se hai<br>messo una spunta sia in<br>agonista che in amatore<br>in una disciplina, rimani<br>agonista!)</td></tr>
+                        <tr><td id="testo_sx"><input type="checkbox" name="amatorebjj"  value="BJJ" />BJJ</td></tr>
+                        <tr><td id="testo_sx"><input type="checkbox" name="amatorejudo"  value="Judo" />Judo</td></tr>
+                        <tr><td id="testo_sx"><input type="checkbox" name="amatorekarate"  value="Karate" />Karate</td></tr> 
+                    <tr>
+                        <td>
+                        <input type="submit"  name="registrati" value="Conferma" style="font-size:18px; " /> 
+                        <input type="button"  name="register" value="Annulla" style="font-size:18px;" onclick="location.href='Progetto.html'" />
+                        </td>
+                    </tr>
+                </table>
+       <script language="Javascript" type="text/javascript">
+<!-- 
+function testpass(f2){
+  // Verifico che il campo password sia valorizzato in caso contrario
+  // avverto dell'errore tramite un Alert
+  if (f2.Pass.value == ""){
+    alert("Errore: inserire una password!")
+    return false
+  }
+  // Verifico che le due password siano uguali, in caso contrario avverto
+  // dell'errore con un Alert
+  if (f2.Pass.value != f2.ConfPass.value) {
+    alert("La password inserita non coincide con la prima!")
+    return false
+  }
+  return true
+}
+-->
+</script>
+            </form> 
+</div>
+</body>
+</html>
+
